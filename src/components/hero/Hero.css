@@ -1,0 +1,413 @@
+/* ==== Hero Section Start ==== */
+/* ==== Hero Section Start ==== */
+.hero-container{
+  height: 100vh !important;
+  margin-top: 0;
+  padding-top: 91px;
+  background: var(--fourth-color);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated background */
+.hero-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(0, 123, 255, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
+  animation: moveBackground 15s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Floating particles */
+.hero-container::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: 
+    radial-gradient(circle, rgba(0, 123, 255, 0.3) 1px, transparent 1px),
+    radial-gradient(circle, rgba(0, 212, 255, 0.2) 1px, transparent 1px);
+  background-size: 50px 50px, 80px 80px;
+  background-position: 0 0, 40px 60px;
+  animation: floatParticles 30s linear infinite;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes moveBackground {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+@keyframes floatParticles {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(50px, 50px) rotate(360deg);
+  }
+}
+
+/* Ensure content is above background */
+.hero-container .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero element animations */
+.hero-element {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-element.hero-animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-box1 p{
+  font-size: 14px;
+  background: #0F1C3C;
+  color: #678DBF;
+  width: 180px;
+  height: 30px;
+  align-content: center;
+  font-weight: 600;
+  border-radius: 50px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-box1 p::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.hero-box1 p:hover::before {
+  left: 100%;
+}
+
+.hero-box1 p:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+  background: linear-gradient(135deg, #0F1C3C 0%, #1a2f5c 100%);
+}
+.hero-box2 h1{
+  font-size: 3rem;
+  width: 100% !important;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #007bff 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease infinite;
+  position: relative;
+  display: inline-block;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(20deg);
+  }
+}
+.hero-box3 p{
+  color: #eee;
+  line-height: 1.8;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+.hero-box4 button{
+  font-weight: 500;
+  color: #eee;
+  width: 200px;
+  position: relative;
+  border: 2px solid var(--text-color);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.hero-box4 button::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--main-color);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.hero-box4 button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.hero-box4 button:active::before {
+  width: 300px;
+  height: 300px;
+}
+.hero-box4 button:nth-child(2)::after{
+  background: linear-gradient(90deg, #007bff, #0056b3);
+}
+.hero-box4 button:nth-child(1):hover{
+  color: var(--text-color) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+}
+
+.hero-box4 button:nth-child(1):hover::after{
+  width: 100%;
+}
+
+.hero-box4 button:nth-child(2):hover{
+  color: var(--text-color) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+  border-color: #007bff;
+}
+
+.hero-box4 button:nth-child(2):hover::after{
+  width: 100%;
+}
+
+.hero-box4 button:active {
+  transform: translateY(-1px);
+}
+
+.hero-box4 div{
+  width: 50%;
+  margin: auto;
+}
+
+.hero-social-icon i{
+  font-size: 22px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+  background: rgba(0, 123, 255, 0.2);
+}
+
+.social-link:hover::before {
+  opacity: 0.2;
+}
+
+.social-link:hover i {
+  color: #fff !important;
+  transform: scale(1.2) rotate(10deg);
+}
+
+.social-link i {
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* ==== Hero Section End ==== */
+
+/* =========== Responsive mode =========== */
+@media screen and (max-width: 1024px) {
+  .hero-content-container{
+    width: 85% !important;
+  }
+  
+  .hero-box2 h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-box4 div {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content-container {
+    width: 90% !important;
+    padding: 20px;
+  }
+  
+  .hero-box2 h1{
+    font-size: 2rem;
+  }
+  
+  .hero-box3 p {
+    font-size: 15px;
+  }
+  
+  .hero-box4 button{
+    font-size: 14px;
+    width: 180px;
+  }
+  
+  .hero-box4 div {
+    width: 70%;
+  }
+  
+  .hero-social-icon {
+    width: 35% !important;
+  }
+  
+  .social-link {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .hero-social-icon i {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .hero-content-container {
+    width: 95% !important;
+    padding: 15px;
+  }
+  
+  .hero-box1 p {
+    font-size: 13px;
+    width: 170px;
+    height: 28px;
+  }
+  
+  .hero-box2 h1{
+    font-size: 1.6rem;
+  }
+  
+  .hero-box3 p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .hero-box4 div{
+    flex-direction: column;
+    width: 100% !important;
+  }
+  
+  .hero-box4 div button{
+    width: 100%;
+  }
+  
+  .hero-social-icon{
+    width: 60% !important;
+    display: flex !important;
+    margin-top: 20px !important;
+  }
+  
+  .social-link {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media screen and (max-width: 375px){
+  .hero-container {
+    padding: 0 10px;
+  }
+  
+  .hero-content-container {
+    width: 100% !important;
+  }
+  
+  .hero-box1 p {
+    font-size: 12px;
+    width: 160px;
+  }
+  
+  .hero-box2 h1{
+    font-size: 1.4rem;
+  }
+  
+  .hero-box3 p{
+    text-align: justify;
+    font-size: 13px;
+  }
+  
+  .hero-box4 button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  
+  .hero-social-icon {
+    width: 75% !important;
+  }
+  
+  .social-link {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .hero-social-icon i {
+    font-size: 18px;
+  }
+}

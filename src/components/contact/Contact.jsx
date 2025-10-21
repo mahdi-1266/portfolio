@@ -58,16 +58,16 @@ const Contact = () => {
       id: 1,
       icon: "fas fa-envelope",
       title: "Email",
-      value: "mahdi.alizada@example.com",
-      link: "mailto:mahdi.alizada@example.com",
+      value: "m.mahdi1838@gmail.com",
+      link: "mailto:m.mahdi1838@gmail.com",
       color: "#007bff",
     },
     {
       id: 2,
       icon: "fas fa-phone",
       title: "Phone",
-      value: "+1 (234) 567-8900",
-      link: "tel:+12345678900",
+      value: "+93 799064435",
+      link: "tel:+93 799064435",
       color: "#10b981",
     },
     {
@@ -85,14 +85,14 @@ const Contact = () => {
       id: 1,
       icon: "fab fa-github",
       name: "GitHub",
-      link: "#",
+      link: "https://github.com/MahdiAlizada12",
       color: "#333",
     },
     {
       id: 2,
       icon: "fab fa-linkedin-in",
       name: "LinkedIn",
-      link: "#",
+      link: "https://www.linkedin.com/in/mohammad-mahdi-alizada-8188a1365/",
       color: "#0077b5",
     },
     {
@@ -106,7 +106,7 @@ const Contact = () => {
       id: 4,
       icon: "fab fa-instagram",
       name: "Instagram",
-      link: "#",
+      link: "https://www.instagram.com/mahdiali9729/",
       color: "#e4405f",
     },
   ];
@@ -134,8 +134,7 @@ const Contact = () => {
           {/* Contact Info Cards */}
           <div className="col-lg-4">
             <div
-              className={`contact-info-wrapper ${isVisible ? "visible" : ""}`}
-            >
+              className={`contact-info-wrapper ${isVisible ? "visible" : ""}`}>
               {contactInfo.map((info, index) => (
                 <a
                   key={info.id}
@@ -164,6 +163,8 @@ const Contact = () => {
                       className="social-link"
                       aria-label={social.name}
                       title={social.name}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <i className={social.icon}></i>
                     </a>

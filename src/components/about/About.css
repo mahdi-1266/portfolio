@@ -1,3 +1,8 @@
+.my-img{
+  object-fit: cover;
+  object-position: left;
+}
+
 .about-section-container{
   background-color: var(--fifth-color);
   padding: 120px 0;
@@ -83,12 +88,32 @@
   margin-bottom: 15px;
 }
 .about-section-subdiv hr{
-  width: 120px;
-  height: 5px;
-  background: linear-gradient(90deg, #007bff, #0056b3) !important;
+  width: 140px;
+  height: 6px;
   transition: width 0.3s ease;
+  background: blue;
   margin-top: 15px;
   margin-bottom: 20px;
+}
+
+.about-section-subdiv hr::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background: white;
+  animation: move linear 2s infinite;
+}
+
+@keyframes move {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(150px);
+  }
 }
 
 .about-section-subdiv:hover hr {

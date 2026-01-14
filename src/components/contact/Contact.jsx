@@ -85,7 +85,7 @@ const Contact = () => {
       id: 1,
       icon: "fab fa-github",
       name: "GitHub",
-      link: "https://github.com/MahdiAlizada12",
+      link: "https://github.com/mahdi-1266",
       color: "#333",
     },
     {
@@ -97,9 +97,9 @@ const Contact = () => {
     },
     {
       id: 3,
-      icon: "fab fa-twitter",
-      name: "Twitter",
-      link: "#",
+      icon: "fab fa-facebook",
+      name: "Facebook",
+      link: "https://www.facebook.com/mahdi.ali.zada.804769/",
       color: "#1da1f2",
     },
     {
@@ -121,11 +121,10 @@ const Contact = () => {
           }`}
         >
           <h2 className="fw-bold text-white mb-3" style={{ fontSize: "3rem" }}>
-            <span className="border-bottom border-3 border-primary pb-2">
-              Get In Touch
-            </span>
+            <span className="">Get In Touch</span>
+            <hr className="m-auto mt-3 rounded position-relative bg-primary hr" />
           </h2>
-          <p className="lead text-muted">
+          <p className="lead text-white">
             Let's work together on your next project
           </p>
         </div>
@@ -164,7 +163,7 @@ const Contact = () => {
                       aria-label={social.name}
                       title={social.name}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="bbc.com"
                     >
                       <i className={social.icon}></i>
                     </a>

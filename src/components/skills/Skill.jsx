@@ -67,11 +67,10 @@ const Skill = () => {
         {/* Section Header */}
         <div className="text-center mb-5" data-aos="fade-up">
           <h2 className="fw-bold text-white mb-3" style={{ fontSize: "3rem" }}>
-            <span className="border-bottom border-3 border-primary pb-2">
-              My Skills
-            </span>
+            <span className="pb-2">My Skills</span>
+            <hr className="m-auto mt-3 rounded position-relative bg-primary hr" />
           </h2>
-          <p className="lead text-light fs-5 mt-4">
+          <p className="lead text-white fs-5">
             Technologies and tools I work with
           </p>
         </div>

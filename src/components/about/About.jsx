@@ -1,5 +1,5 @@
 import "./About.css";
-import img from "../../assets/developer.avif";
+import img from "../../assets/mahdi.jpg";
 import { useEffect, useRef } from "react";
 
 const About = () => {
@@ -45,19 +45,20 @@ const About = () => {
         <div className="about-grid-box w-100 m-auto">
           <div
             className="about-section-subdiv text-center scroll-hidden"
-            ref={headerRef}
-          >
+            ref={headerRef}>
+
             <h1
               className="fw-bold text-light mb-3"
               style={{ fontSize: "3rem" }}
             >
               About Me
             </h1>
-            <p className="mb-2">Get to know me better</p>
-            <hr className="m-auto" />
+            <hr className="m-auto mb-2 rounded position-relative bg-primary hr" />
+            <p className="text-white">Get to know me better</p>
           </div>
+
           <div className="position-relative scroll-hidden" ref={imageRef}>
-            <img src={img} alt="" className="w-100 h-100" />
+            <img src={img} alt="" className="my-img w-100 h-100" />
             <div className="about-content ps-4 mb-3 lh-1 position-absolute bottom-0">
               <h1 className="fs-4 fw-bold">Mahdi Alizada</h1>
               <p className="">Front-End Developer</p>

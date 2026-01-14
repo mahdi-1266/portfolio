@@ -173,11 +173,12 @@ const Projects = () => {
           }`}
         >
           <h2 className="fw-bold text-white mb-3" style={{ fontSize: "3rem" }}>
-            <span className="border-bottom border-3 border-primary pb-2">
+            <span className="border-primary pb-2">
               My Projects
             </span>
+            <hr className="m-auto mt-3 rounded position-relative bg-primary hr" />
           </h2>
-          <p className="lead text-muted">
+          <p className="lead text-white">
             Showcasing my recent work and creative solutions
           </p>
         </div>

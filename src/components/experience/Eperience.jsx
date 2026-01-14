@@ -93,11 +93,12 @@ const Eperience = () => {
           }`}
         >
           <h2 className="fw-bold text-white mb-3" style={{ fontSize: "3rem" }}>
-            <span className="border-bottom border-3 border-primary pb-2">
+            <span className="">
               Work Experience
             </span>
+            <hr className="m-auto mt-3 rounded position-relative bg-primary hr" />
           </h2>
-          <p className="lead text-muted">
+          <p className="lead text-white">
             My professional journey and career highlights
           </p>
         </div>

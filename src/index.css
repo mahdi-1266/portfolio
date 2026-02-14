@@ -15,7 +15,6 @@ html {
 }
 :root{
   /* Colors */
-  
   --main-color: #0B111E;
   --primary-color: #7D8490;
   --second-bg-color: #131313;
@@ -24,9 +23,6 @@ html {
   --fourth-color: #060B16;
   --fifth-color: #0A0F1D;
   --text-color: white; 
-  
-
-  /* Font size */
 }
 .dark-theme{
   --primary-color: #000106;

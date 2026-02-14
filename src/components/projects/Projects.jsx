@@ -32,54 +32,6 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Website",
-      description:
-        "Modern responsive e-commerce platform with shopping cart and payment integration",
-      category: "web",
-      technologies: ["React", "CSS3", "Bootstrap"],
-      image:
-        "https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop",
-      github: "https://github.com/mahdi-1266",
-      demo: "#",
-    },
-    {
-      id: 2,
-      title: "Portfolio Dashboard",
-      description:
-        "Interactive admin dashboard with data visualization and analytics",
-      category: "web",
-      technologies: ["React", "JavaScript", "CSS"],
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-      github: "https://github.com/mahdi-1266",
-      demo: "#",
-    },
-    {
-      id: 3,
-      title: "Weather App",
-      description:
-        "Real-time weather application with geolocation and 7-day forecast",
-      category: "app",
-      technologies: ["React", "API", "CSS3"],
-      image:
-        "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
-      github: "https://github.com/mahdi-1266",
-      demo: "#",
-    },
-    {
-      id: 4,
-      title: "Task Manager",
-      description:
-        "Productivity tool for managing tasks, projects, and team collaboration",
-      category: "app",
-      technologies: ["React", "Bootstrap", "JavaScript"],
-      image:
-        "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
-      github: "https://github.com/mahdi-1266",
-      demo: "#",
-    },
-    {
-      id: 5,
       title: "Restaurant Website",
       description:
         "Elegant restaurant website with menu display and online reservation",
@@ -91,65 +43,101 @@ const Projects = () => {
       demo: "#",
     },
     {
-      id: 6,
-      title: "Social Media App",
+      id: 2,
+      title: "E-Commerce Website",
       description:
-        "Social networking platform with real-time messaging and post sharing",
-      category: "app",
-      technologies: ["React", "CSS", "JavaScript"],
-      image:
-        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
-      github: "https://github.com/mahdi-1266",
-      demo: "#",
-    },
-    {
-      id: 7,
-      title: "Fitness Tracker",
-      description:
-        "Health and fitness tracking application with workout plans and progress monitoring",
-      category: "app",
-      technologies: ["React", "CSS3", "JavaScript"],
-      image:
-        "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=400&fit=crop",
-      github: "https://github.com/mahdi-1266",
-      demo: "#",
-    },
-    {
-      id: 8,
-      title: "Blog Platform",
-      description:
-        "Modern blogging platform with rich text editor and content management system",
-      category: "web",
-      technologies: ["React", "Bootstrap", "CSS"],
-      image:
-        "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop",
-      github: "https://github.com/mahdi-1266",
-      demo: "#",
-    },
-    {
-      id: 9,
-      title: "Music Player",
-      description:
-        "Elegant music streaming application with playlists and audio visualization",
-      category: "app",
-      technologies: ["React", "JavaScript", "CSS3"],
-      image:
-        "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop",
-      github: "https://github.com/mahdi-1266",
-      demo: "#",
-    },
-    {
-      id: 10,
-      title: "Real Estate Platform",
-      description:
-        "Property listing website with advanced search filters and virtual tours",
+        "Modern responsive e-commerce platform with shopping cart and payment integration",
       category: "web",
       technologies: ["React", "CSS3", "Bootstrap"],
       image:
-        "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop",
       github: "https://github.com/mahdi-1266",
       demo: "#",
     },
+    {
+      id: 3,
+      title: "Portfolio Dashboard",
+      description:
+        "Interactive admin dashboard with data visualization and analytics",
+      category: "web",
+      technologies: ["React", "JavaScript", "CSS"],
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      github: "https://github.com/mahdi-1266",
+      demo: "#",
+    },
+    // {
+    //   id: 4,
+    //   title: "Task Manager",
+    //   description:
+    //     "Productivity tool for managing tasks, projects, and team collaboration",
+    //   category: "app",
+    //   technologies: ["React", "Bootstrap", "JavaScript"],
+    //   image:
+    //     "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
+    //   github: "https://github.com/mahdi-1266",
+    //   demo: "#",
+    // },
+    // {
+    //   id: 5,
+    //   title: "Social Media App",
+    //   description:
+    //     "Social networking platform with real-time messaging and post sharing",
+    //   category: "app",
+    //   technologies: ["React", "CSS", "JavaScript"],
+    //   image:
+    //     "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
+    //   github: "https://github.com/mahdi-1266",
+    //   demo: "#",
+    // },
+    // {
+    //   id: 6,
+    //   title: "Fitness Tracker",
+    //   description:
+    //     "Health and fitness tracking application with workout plans and progress monitoring",
+    //   category: "app",
+    //   technologies: ["React", "CSS3", "JavaScript"],
+    //   image:
+    //     "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=400&fit=crop",
+    //   github: "https://github.com/mahdi-1266",
+    //   demo: "#",
+    // },
+    // {
+    //   id: 7,
+    //   title: "Blog Platform",
+    //   description:
+    //     "Modern blogging platform with rich text editor and content management system",
+    //   category: "web",
+    //   technologies: ["React", "Bootstrap", "CSS"],
+    //   image:
+    //     "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop",
+    //   github: "https://github.com/mahdi-1266",
+    //   demo: "#",
+    // },
+    // {
+    //   id: 8,
+    //   title: "Music Player",
+    //   description:
+    //     "Elegant music streaming application with playlists and audio visualization",
+    //   category: "app",
+    //   technologies: ["React", "JavaScript", "CSS3"],
+    //   image:
+    //     "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop",
+    //   github: "https://github.com/mahdi-1266",
+    //   demo: "#",
+    // },
+    // {
+    //   id: 9,
+    //   title: "Real Estate Platform",
+    //   description:
+    //     "Property listing website with advanced search filters and virtual tours",
+    //   category: "web",
+    //   technologies: ["React", "CSS3", "Bootstrap"],
+    //   image:
+    //     "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
+    //   github: "https://github.com/mahdi-1266",
+    //   demo: "#",
+    // },
   ];
 
   const categories = [
@@ -258,9 +246,7 @@ const Projects = () => {
         {/* Empty State */}
         {filteredProjects.length === 0 && (
           <div className="text-center py-5">
-            <p className="text-muted fs-5">
-              No projects found in this category
-            </p>
+            <p className="text-white fs-5">No projects found in this category</p>
           </div>
         )}
       </div>

@@ -68,10 +68,10 @@ const About = () => {
             <div className="aobut-left-subbox">
               <h3 className="fw-bold mb-3">Who Am I</h3>
               <p className="mb-3">
-                I'm a passionate Frontend Developer dedicated to crafting
-                beautiful, responsive, and user-friendly web applications. With
+                I'm a passionate Fullstack Developer dedicated to crafting
+                beautiful, responsive, dynamic, and user-friendly web applications. With
                 expertise in modern web technologies like HTML5, CSS3,
-                JavaScript, and React, I transform creative ideas into seamless
+                JavaScript, and React, MySQL, PHP, and Laravel I transform creative ideas into seamless
                 digital experiences that users love.
               </p>
               <p className="mb-0">

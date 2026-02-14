@@ -31,7 +31,7 @@ const Eperience = () => {
   const experiences = [
     {
       id: 1,
-      role: "Frontend Developer",
+      role: "Fullstack Developer",
       company: "Tech Solutions Inc.",
       period: "2023 - Present",
       location: "Remote",
@@ -47,7 +47,7 @@ const Eperience = () => {
     },
     {
       id: 2,
-      role: "Junior Frontend Developer",
+      role: "Junior Fullstack Developer",
       company: "Digital Agency Co.",
       period: "2022 - 2023",
       location: "On-site",
